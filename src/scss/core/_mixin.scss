@@ -1,0 +1,16 @@
+@import './core/variables';
+
+@mixin header-footer {
+  background-color: $headerFooterBckg;
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin nav {
+  background-color: $navBckg;
+  color: $navText;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5%;
+}

@@ -1,0 +1,18 @@
+@import './core/mixin';
+
+.header {
+    @include header-footer;
+
+    &__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+
+    &__nav__ul {
+        @include nav;
+
+    }
+}

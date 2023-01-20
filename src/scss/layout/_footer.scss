@@ -1,1 +1,9 @@
+@import './core/mixin';
 
+.footer {
+    @include header-footer;
+
+    &__nav__ul {
+        @include nav;
+    }
+}
