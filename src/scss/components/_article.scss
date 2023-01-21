@@ -1,9 +1,8 @@
-@import './core/mixin';
-@import './core/variables';
+@import '../core/mixin';
 
 .main__article {
-    margin: 0 5% 0 5%;
-    padding: 3% 0 3% 0;
+    margin: 0% 5% 0 5%;
+    padding-top: 5%;
 
 
     &__title {
@@ -11,7 +10,8 @@
     }
 
     &__text {
-        padding: 2.5% 0 2.5% 0;
+        padding: 2.5% 0 5% 0;
+        line-height: 1.4;
     }
 }
 
@@ -22,6 +22,6 @@
     &__text {
         padding: 0 0 0 5%;
         margin: 5%;
-        border-left: solid 2px gray;
+        border-left: solid 4px lightgray;
     }
 }
