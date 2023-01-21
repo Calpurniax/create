@@ -1,10 +1,13 @@
+@import './core/mixin';
+@import './core/variables';
+
 .main__article {
     margin: 0 5% 0 5%;
     padding: 3% 0 3% 0;
 
 
     &__title {
-        font-size: 2rem;
+        @include articleTitle
     }
 
     &__text {

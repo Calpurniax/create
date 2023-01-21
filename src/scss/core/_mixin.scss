@@ -4,8 +4,6 @@
   background-color: $headerFooterBckg;
   display: flex;
   flex-direction: column;
-
-
 }
 
 @mixin nav {
@@ -15,4 +13,10 @@
   flex-direction: row;
   justify-content: space-around;
   padding: 3%;
+}
+
+@mixin articleTitle {
+  font-size: 1.7rem;
+  font-family: $textFont;
+  font-weight: 600;
 }
