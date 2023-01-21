@@ -1,9 +1,29 @@
 @import './core/mixin';
+@import './core/variables';
 
 .footer {
     @include header-footer;
+    align-items: center;
+    padding: 5% 0 5% 0;
+
+    &__nav {}
+
 
     &__nav__ul {
         @include nav;
+        gap: 5%;
+        width: 80vw;
+
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: $socialBckg;
+        color: $navText;
+        text-transform: uppercase;
+        padding: 3% 5% 3% 5%;
+        gap: 15%;
     }
 }

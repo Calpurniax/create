@@ -4,6 +4,8 @@
   background-color: $headerFooterBckg;
   display: flex;
   flex-direction: column;
+
+
 }
 
 @mixin nav {
@@ -12,5 +14,5 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 5%;
+  padding: 3%;
 }
