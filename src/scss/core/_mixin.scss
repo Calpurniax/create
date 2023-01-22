@@ -19,3 +19,9 @@
   font-family: $textFont;
   font-weight: 600;
 }
+
+@mixin asideDiv {
+  height: 20vh;
+  width: 80%;
+  background-color: $headerFooterBckg ;
+}
