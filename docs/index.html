@@ -5,30 +5,63 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Prueba Create - Sofia Gracia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
-<body>
+<body class="body">
   <header class="header">
-      <img src="./assets/images/logo.png" alt="logo" class="header__logo">
-      <h1 class="header__title">LayoutDeEjemplo</h1>
+      <div class="header__title">
+          <img src="./assets/images/logo.png" alt="logo" class="header__title__logo">
+          <h1 class="header__title__text">LayoutDeEjemplo</h1>
+      </div>
+      <nav class=header__nav>
+          <ul class=header__nav__ul>
+              <li class="header__nav__ul--link">Link1</li>
+              <li class="header__nav__ul--link">Link2</li>
+              <li class="header__nav__ul--link">Link3</li>
+              <li class="header__nav__ul--link">Link4</li>
+          </ul>
+      </nav>
   </header>
-  <main>
-    <article>
-        <p>esto es un artículo</p>
-    </article>
-    <article>
-        <p>esto es un artículo</p>
-    </article>
-    <article>
-        <p>esto es un artículo</p>
-    </article>
-    <aside>
-        <p>Esto es el aside</p>
+  <main class="main">
+    <section class="main__section">
+      <article class="main__article ">
+          <h2 class="main__article__title">Lorem ipsum dolor sit amet</h2>
+          <p class="main__article__text ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero odit repellendus eveniet magni saepe quaerat quo corporis id, modi consectetur veniam aperiam, sunt earum ipsum debitis dolorum quis quas ducimus.</p>
+      </article>
+      <article class="main__article emphasize">
+          <h2 class="main__article__title">Lorem ipsum dolor sit amet</h2>
+          <p class="main__article__text emphasize__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero odit repellendus eveniet magni saepe quaerat quo corporis id, modi consectetur veniam aperiam, sunt earum ipsum debitis dolorum quis quas ducimus.</p>
+      </article>
+      <article class="main__article ">
+          <h2 class="main__article__title">Lorem ipsum dolor sit amet</h2>
+          <p class="main__article__text ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero odit repellendus eveniet magni saepe quaerat quo corporis id, modi consectetur veniam aperiam, sunt earum ipsum debitis dolorum quis quas ducimus.</p>
+      </article>
+    </section>
+    <aside class="aside">
+        <div class="aside__div"></div>
+        <div class="aside__div"></div>
     </aside>
   </main>
-  <footer>
-      <p>Esto es el footer</p>
+  <footer class="footer">
+      <nav class=footer__nav>
+          <ul class=footer__nav__ul>
+              <li class="footer__nav__ul--link">Link1</li>
+              <li class="footer__nav__ul--link">Link2</li>
+              <li class="footer__nav__ul--link">Link3</li>
+              <li class="footer__nav__ul--link">Link4</li>
+          </ul>
+      </nav>
+      <ul class="footer__social">
+          <li class="footer__social__link">Fb</li>
+          <li class="footer__social__link">Tw</li>
+          <li class="footer__social__link">G+</li>
+      </ul>
   </footer>
 </body>
 

@@ -1,5 +1,6 @@
 @import '../core/mixin';
 @import '../core/responsive';
+@import '../core/variables';
 
 .aside {
     @include tablet {
@@ -7,7 +8,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        background-color: green;
+        background-color: $asideBckg;
         padding-top: 2%;
         min-width: 35%;
         gap: 5%
