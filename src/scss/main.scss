@@ -1,16 +1,7 @@
-/*@import 'core/variables';
-@import 'core/reset';
-@import 'components/code';
-@import 'components/links';
-@import 'layout/page';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'pages/index';
-*/
-
 @import 'core/reset';
 @import 'core/variables';
 @import 'components/article';
+@import 'components/link';
 @import 'layout/header';
 @import 'layout/aside';
 @import 'layout/footer';
@@ -21,7 +12,9 @@
 
 .body {
     height: 100vh;
-    background-color: $headerFooterBckg;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .main {
@@ -30,11 +23,21 @@
     @include tablet {
         display: flex;
         flex-direction: row;
+        justify-content: flex-start;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    @include desktop {
+        border-left: 35px solid $border;
+        min-height: 75%;
+        padding: 0 5% 0 0;
     }
 
     &__section {
+
         @include tablet {
-            max-width: 75%;
+            max-width: 65%;
         }
     }
 

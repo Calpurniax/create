@@ -1,5 +1,6 @@
 @import './core/mixin';
 @import'./core/variables';
+@import'./components/link';
 
 .header {
     @include header-footer;
@@ -10,13 +11,33 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 5%;
+        padding-top: 6%;
+        padding-bottom: 2%;
         font-family: $titleFont;
         font-size: 1.5rem;
         gap: 3%;
+
+        @include tablet {
+            padding-top: 3%;
+        }
+
+        @include desktop {
+            font-size: 2rem;
+            justify-content: flex-start;
+            padding-left: 0;
+        }
     }
 
     &__nav__ul {
         @include nav;
+
+        @include desktop {
+            width: 40vw;
+
+        }
+
+        &--link {
+            @include link
+        }
     }
 }

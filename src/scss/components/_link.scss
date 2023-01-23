@@ -1,0 +1,28 @@
+@import'./core/variables';
+
+@mixin link {
+    padding: 3%;
+
+    @include tablet {
+        padding: 1.5%;
+    }
+
+    @include desktop {
+        padding: 3%;
+    }
+
+    &:hover {
+        animation-name: hoverLink;
+        animation-duration: 2s;
+    }
+}
+
+@keyframes hoverLink {
+    from {
+        background-color: $navBckg;
+    }
+
+    to {
+        background-color: $navHover;
+    }
+}

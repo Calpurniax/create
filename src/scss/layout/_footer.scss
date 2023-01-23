@@ -4,13 +4,29 @@
 .footer {
     @include header-footer;
     align-items: center;
-    padding: 4% 0 3% 0;
+    padding: 6% 0 3% 0;
+
+    @include tablet {
+        gap: 2vh;
+    }
+
+    @include desktop {
+        padding-bottom: 1%;
+        padding-top: 1%
+    }
 
     &__nav__ul {
         @include nav;
-        gap: 5%;
         width: 84vw;
 
+        @include desktop {
+            max-width: 25vw;
+
+        }
+
+        &--link {
+            @include link
+        }
     }
 
     &__social {
@@ -20,7 +36,16 @@
         background-color: $socialBckg;
         color: $navText;
         text-transform: uppercase;
-        padding: 2% 7% 2% 7%;
+        padding: 3% 7% 3% 7%;
         gap: 20%;
+
+        @include tablet {
+            padding: 1.5% 5% 1.5% 5%;
+        }
+
+        @include desktop {
+            padding: 1% 4% 1% 4%;
+            gap: 35%;
+        }
     }
 }

@@ -1,9 +1,9 @@
 @import '../core/mixin';
+@import '../core/variables';
 
 .main__article {
     margin: 0% 5% 0 5%;
     padding-top: 5%;
-
 
     &__title {
         @include articleTitle
@@ -12,17 +12,17 @@
     &__text {
         padding: 2.5% 0 5% 0;
         font-size: 0.9rem;
-        line-height: 1.3;
+        line-height: 1.4;
     }
 }
 
 .emphasize {
-    border-bottom: solid black 1px;
-    border-top: solid black 1px;
+    border-bottom: solid $bottomBorder 1px;
+    border-top: solid $bottomBorder 1px;
 
     &__text {
         padding: 0 0 0 5%;
         margin: 5%;
-        border-left: solid 4px lightgray;
+        border-left: solid 4px $border;
     }
 }
